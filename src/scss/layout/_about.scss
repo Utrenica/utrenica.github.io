@@ -1,0 +1,35 @@
+.about {
+    max-width: 90vw;
+    margin-top: 64px;
+    border-radius: 30px;
+    padding: 32px 16px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	@include shadow;
+
+    @include media( '>large' ) {
+        padding: 64px 32px;
+        flex-direction: row;
+    }
+}
+
+.about-header {
+	margin: 0 auto;
+	margin-bottom: 32px;
+    align-self: center;
+    img {
+        margin: 0 auto;
+    }
+    h1 {
+        margin-top: 32px;
+    }
+}
+
+.about-text {
+	width: 75vw;
+    @include media( '>large' ) {
+        width: 55vw;
+    }
+}
